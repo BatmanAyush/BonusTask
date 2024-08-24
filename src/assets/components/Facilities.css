@@ -1,0 +1,105 @@
+.facilites-content {
+    display: flex;
+    flex-direction: column; /* Stack elements on smaller screens */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 9rem;
+    box-sizing: border-box;
+    gap: 4rem; /* Reduce gap for smaller screens */
+    margin-bottom: 7rem;
+  }
+  
+  .text-content {
+    text-align: center; /* Center text on smaller screens */
+  }
+  
+  .title-facilites {
+    font-size: 2.4rem; /* Slightly smaller for better fit on smaller screens */
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .lorem-facilites {
+    margin-top: 1.3rem;
+    font-weight: 200;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 25rem;
+  }
+  
+  .facilites-button {
+    margin-top: 1.8rem;
+    padding: 1rem;
+    background: rgb(18, 188, 52);
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    width: 8.8rem;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  .facilites-button:hover{
+    background: rgba(14, 186, 48,0.89);
+    transform: scale(1.1);
+}
+  
+  .facilities-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center; /* Center the logos */
+    width: 100%;
+  }
+  
+  .col-1 {
+    display: flex;
+    gap: 3rem;
+    justify-content: center; /* Center the logos */
+    flex-wrap: wrap; /* Wrap logos to new lines on smaller screens */
+  }
+  
+  .logo-list {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 200ms;
+    text-align: center; /* Center content within the logo box */
+  }
+  .logo-list:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+ 
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .facilites-content {
+      gap: 2rem;
+    }
+    
+    .title-facilites {
+      font-size: 2rem;
+    }
+  
+    .lorem-facilites {
+      font-size: 1rem;
+      width: 80%;
+    }
+    
+    .facilites-button {
+      width: 7rem;
+    }
+    
+    .col-1 {
+      gap: 1.5rem; /* Reduce gap between logos */
+    }
+    
+    .logo-list {
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+  

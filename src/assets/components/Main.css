@@ -1,0 +1,168 @@
+.main-content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Change from flex-start to center */
+  justify-content: center;
+}
+
+.main-dummy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.dummy-text {
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.main-text {
+  font-size: 35px;
+  font-weight: 450;
+  width: 100%;
+}
+
+.main-lorem {
+  margin-left: 2rem;
+  width: 100%;
+  font-weight: 200;
+  text-align: center;
+}
+
+.main-view {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.6rem;
+}
+
+.main-button {
+  border-radius: 20px;
+  color: rgb(14, 186, 48);
+  border: none;
+  width: 6rem;
+  padding: 10px;
+  background: rgba(14, 186, 48, 0.2);
+  cursor: pointer;
+}
+
+.hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.card {
+  background: rgb(251, 247, 247);
+  width: 100%; /* Takes up full width of the parent */
+  max-width: 350px; /* Set a max width to control the size */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.hotel img {
+  width: 100%;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Center the card container */
+  width: 100%; /* Change from 100vw to 100% */
+  padding: 0 2rem; /* Add padding for small screens */
+  box-sizing: border-box; /* Ensure padding doesn't affect the total width */
+}
+
+.card-component {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-top: 50px;
+    padding: 0 1rem;
+  }
+
+  .main-text {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .main-lorem {
+    margin-left: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-button {
+    width: 5rem;
+  }
+
+  .card-component {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-component {
+    justify-content: center; /* Center cards on smaller screens */
+  }
+
+  .card {
+    max-width: 300px; /* Reduce the max width for smaller screens */
+  }
+
+  .main-content {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-text {
+    font-size: 20px;
+  }
+
+  .main-lorem {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .main-button {
+    width: 4rem;
+  }
+
+  .card-component {
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

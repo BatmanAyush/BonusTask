@@ -1,0 +1,139 @@
+.hero-content {
+    cursor: pointer;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    transition: all 300ms;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background-color: rgb(231, 247, 251);
+    font-size: 40px;
+    border-top-left-radius: 40px;
+    padding: 20px; /* Added padding for spacing */
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.text {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Set width to 100% for responsive scaling */
+    background-color: rgb(231, 247, 251);
+    font-size: 40px;
+    border-top-left-radius: 40px;
+}
+
+.hero-title {
+    margin: 20px 0 0 0;
+    font-size: 2.5rem; /* Adjusted font size for better scaling */
+    font-weight: 400;
+    text-align: center; /* Centered text for better responsiveness */
+}
+
+.hero-lorem {
+    margin: 20px 60px 0 60px; /* Adjusted margin for better spacing */
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center; /* Centered text for better responsiveness */
+}
+
+.fuck-this-shit {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fuck-this-shit p {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+.hero-photo {
+    height: auto;
+    width: 100%;
+    max-width: 615px; /* Ensure the image doesn't exceed its container */
+    border-top-right-radius: 40px; /* Rounded corner for consistency */
+}
+
+.play-button {
+    width: 30px;
+    cursor: pointer;
+    background-color: white;
+    padding: 6px;
+    border-radius: 100%;
+    transition: all 300ms;
+}
+
+.play-button:hover {
+    transform: scale(1.3);
+}
+
+.play-button:active {
+    transform: scale(1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-lorem {
+        margin: 20px;
+        font-size: 0.9rem;
+    }
+
+    .fuck-this-shit {
+        margin-top: 20px;
+    }
+
+    .hero-photo {
+        max-width: 100%;
+        border-radius: 0; /* Remove rounded corner for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text, .text {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-lorem {
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+
+    .fuck-this-shit p {
+        font-size: 0.9rem;
+    }
+
+    .play-button {
+        width: 25px;
+        padding: 4px;
+    }
+}
